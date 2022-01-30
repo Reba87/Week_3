@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.body{
+    background-image:url(./IMG/FODO_STREET.jpg) ;
+}
+.header{
+    
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    color: white;
+    display: flex;
+    height:90px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px
+}
+.txt_header{
+    font-family: 'Koulen', cursive;
+    font-size: 60px;
+}
+.menu{
+    
+    display:flex;
+    gap: 30px;
+}
+
+.menu__enlaces{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Koulen', cursive;
+
+}.menu__enlaces:hover{
+    background-color: rgb(255, 166, 0);    
+}
+
+.contenedor{  
+    height: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galeria_img{   
+   
+    width: 300px;
+    height:300px;
+    margin-top: 50px;
+    object-fit: cover;
+}
