@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Continental</title>
+    <link rel="stylesheet" href="style_agenciaviajes.css">
+    <link rel="icon" type="image/png" href="Recursos_webViajes/Recurso 1.png">
+
+</head>
+
+<body>
+
+
+    <main class="contenedor">
+        <header class="header">
+
+            <img class="logo" src="Recursos_webViajes/logo.png">
+            <nav class="menu">
+                <a class="menu__enlaces" href="">Inicio</a>
+                <a class="menu__enlaces" href="">Destinos</a>
+                <a class="menu__enlaces" href="">Registro</a>
+                <a class="menu__enlaces" href="">900 81 22 22</a>
+            </nav>
+        </header>
+
+        <form class="Buscador">
+            <input type="text" class="input_text" id="name" name="name" placeholder="NOMBRE">
+            <input type="text" class="input_text" id="origen" name="origen-viaje" placeholder="ORIGEN">
+            <input type="text" class="input_text" id="destino" name="destino" placeholder="DESTINO">
+            <label class="txt-salida">IDA</label>
+            <input type="date" class="input_text" id="ida" name="ida-viaje" placeholder="SALIDA">
+            <label class="txt-vuelta">VUELTA</label>
+            <input type="date" class="input_text" id="vuelta" name="vuelta-viaje" placeholder="VUELTA">
+            <input type="number" class="input_text" id="viajeros" name="personas-numb" placeholder="VIAJEROS">
+            <button onclick="filtro()" class="boton" type="reset">FILTRAR</button>
+            <button onclick="captura()" class="boton" type="reset">INFO</button>
+        </form>
+
+        <article class="text">
+            <p class="p1"> | </p>
+            <p class="p2"> Descubre nuestras mejores ofertas </p>
+        </article>
+
+
+        <section class="banner">
+
+
+            <article class="banner1">
+                <img class="img-zoom" src="Recursos_webViajes/galicia3.jpg">
+                <p class="txt1">Galicia</p>
+                <p class="txt2">5 Dias / 4 Noches.</p>
+                <p class="txt3">DESDE: 400€</p>
+            </article>
+
+
+            <article class="banner2">
+                <img class="img-zoomcana" src="Recursos_webViajes/canarias.jpg">
+                <p class="txt1-cana">Canarias</p>
+                <p class="txt2-cana">10 Dias / 9 Noches.</p>
+                <p class="txt3">DESDE: 800€</p>
+            </article>
+
+            <article class="banner3">
+                <img class="img-zoomcana" src="Recursos_webViajes/mallorca.jpg">
+                <p class="txt1-cana">Mallorca</p>
+                <p class="txt2-cana">6 Dias / 5 Noches.</p>
+                <p class="txt3">DESDE: 700€</p>
+            </article>
+
+            <article class="banner4">
+                <img class="img-zoom-escoc" src="Recursos_webViajes/escociajpg.jpg">
+                <p class="txt1-escoc">Escocia</p>
+                <p class="txt2-escoc">8 Dias / 7 Noches.</p>
+                <p class="txt3">DESDE: 1.000€</p>
+            </article>
+
+            <article class="banner5">
+                <img class="img-zoom-roma" src="Recursos_webViajes/roma.jpg">
+                <p class="txt1-roma">Roma</p>
+                <p class="txt2-roma">5 Dias / 4 Noches.</p>
+                <p class="txt3">DESDE: 650€</p>
+            </article>
+
+        </section>
+    </main>
+    <script src="agencia.js"></script>
+</body>
+
+</html>
