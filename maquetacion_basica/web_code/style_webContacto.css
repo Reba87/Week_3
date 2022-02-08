@@ -11,10 +11,11 @@
 }
 .body{
     
-    background-image: url(./FONDO1.jpg);
+    background-image: url(./FONDO.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
+   
 }
 .menu1{
     
