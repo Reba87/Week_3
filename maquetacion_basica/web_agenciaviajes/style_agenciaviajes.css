@@ -56,8 +56,14 @@
     border-radius: 5px;
     background: #ffd900;
     margin-left: 10px;
-    box-shadow: 20px 0px 40px black;    
+    box-shadow: 20px 0px 40px black;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
    }
+.boton:hover{
+    background: white;
+    
+}
 .boton-info{
     color: #090909;
     width: 120px;
@@ -337,4 +343,9 @@
     font-family: 'Oswald', sans-serif;
     color: rgb(255, 250, 250);
     text-align: left;
+}
+.tabla{
+    
+    width:700px;
+    height: 200px;
 }

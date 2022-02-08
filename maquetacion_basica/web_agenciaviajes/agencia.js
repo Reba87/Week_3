@@ -1,4 +1,6 @@
-let captura = function () {
+let personas = [];
+
+function captura() {
   let name = document.getElementById("name").value;
   let origen = document.getElementById("origen").value;
   let destino = document.getElementById("destino").value;
@@ -6,38 +8,53 @@ let captura = function () {
   let vuelta = document.getElementById("vuelta").value;
   let viajeros = document.getElementById("viajeros").value;
 
-  let data = [
-    {
-        "Nombre": name,
-        "Origen": origen,
-        "Destino": destino,
-        "Ida": ida,
-        "Vuelta":vuelta,
-        "Viajeros":viajeros
-    }
-  ]
+  let informacion = {
+    nombre: name,
+    origen: origen,
+    destino: destino,
+    ida: ida,
+    vuelta: vuelta,
+    viajeros: viajeros
+  };
+  personas.push(informacion);
+}
+console.log(personas);
 
-  for(datos of data){
-    return datos.push(datos)
-  }
-    
-};
+let personFiltro = []
 
-console.log(datos);
 
 function filtro() {
-  for (captura of filtro) {
+  for (let persona of personas) {
+    personas.destino = persona.destino.toLowerCase();
+
     if (
-      captura.includes(
-        "MALLORCA" ||
-          "mallorca" ||
-          "CANARIAS" ||
-          "canarias" ||
-          "GALICIA" ||
-          "galicia"
-      )
+      personas.destino == "mallorca" ||
+      personas.destino == "canarias" ||
+      personas.destino == "galicia"
     ) {
+      personFiltro.push(persona);
     }
   }
-  console.log(filter);
+
+  
+  let mostrar = document.getElementById("tabla");
+  mostrar.innerHTML = `<tr>
+                        <th>NOMBRE</th>
+                        <th>ORIGEN</th>
+                        <th>DESTINO</th>
+                        <th>FECHA IDA</th>
+                        <th>FECHA REGRESO</th>
+                        <th>VIAJEROS</th>
+                      </tr>`
+  for (let person in personFiltro) 
+  {
+    mostrar.innerHTML +=`<tr>
+                      <td>${person[name]}</td>
+                      
+                     </tr>`
+  }
+  console.log(personFiltro) 
 }
+
+
+
