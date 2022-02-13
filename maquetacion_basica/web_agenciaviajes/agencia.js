@@ -46,11 +46,15 @@ function filtro() {
                         <th>FECHA REGRESO</th>
                         <th>VIAJEROS</th>
                       </tr>`
-  for (let person in personFiltro) 
+  for (let person of personFiltro) 
   {
     mostrar.innerHTML +=`<tr>
-                      <td>${person[name]}</td>
-                      
+                      <td>${person.nombre}</td>
+                      <td>${person.origen}</td>
+                      <td>${person.destino}</td>
+                      <td>${person.ida}</td>
+                      <td>${person.vuelta}</td>
+                      <td>${person.viajeros}</td>
                      </tr>`
   }
   console.log(personFiltro) 
